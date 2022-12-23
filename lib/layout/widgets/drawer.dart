@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navbar/layout/models/navigation-item.dart';
 import 'package:navbar/screens/geology.dart';
-import 'package:navbar/screens/lithology.dart';
+import 'package:navbar/screens/lithostartigraphy.dart';
 import 'package:navbar/core/custom_navigator.dart';
 
 class ExploreDrawer extends StatefulWidget {
@@ -36,7 +36,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
           navItemArr.add(
             ListTile(
               tileColor: color!=null?color:null,
-              leading: Icon(Icons.layers),
+              leading: element.icon,
               title: Text(
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   element.label),

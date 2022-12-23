@@ -37,7 +37,7 @@ class _TopBarContentsState extends State<TopBarContents> {
     return PreferredSize(
       preferredSize: Size(screenSize.width, 1000),
       child: Container(
-        color: Colors.white70,
+        color:Theme.of(context).primaryColor,
         child: Padding(
           padding: EdgeInsets.all(20),
           child: Row(
@@ -140,7 +140,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                 icon: Icon(Icons.brightness_6),
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
-                color: Theme.of(context).primaryColor,
+                // color: Theme.of(context).primaryColor,
                 onPressed: () {
                   if (Theme.of(context).brightness == Brightness.dark) {
                     EasyDynamicTheme.of(context).changeTheme();

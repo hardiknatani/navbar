@@ -1,0 +1,235 @@
+{
+    "id": "Water area/Lake, river or bay",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Water area",
+    "filter": [
+        "==",
+        "_symbol",
+        7
+    ],
+    "minzoom": 11,
+    "layout": {},
+    "paint": {
+        "fill-outline-color": "#3a4364",
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Water line/Stream or river",
+    "type": "line",
+    "source": "esri",
+    "source-layer": "Water line",
+    "filter": [
+        "==",
+        "_symbol",
+        0
+    ],
+    "minzoom": 11,
+    "layout": {
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#434d73"
+    }
+},
+{
+    "id": "Marine area/1",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Marine area",
+    "minzoom": 5,
+    "layout": {},
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 2 (shallow water)",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        0
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 3",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        1
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 4",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        2
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 5",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        3
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 6",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        4
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Bathymetry/depth 7 (deep water)",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Bathymetry",
+    "filter": [
+        "==",
+        "_symbol",
+        5
+    ],
+    "maxzoom": 11,
+    "layout": {
+        "visibility": "none"
+    },
+    "paint": {
+        "fill-antialias": false,
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Water area small scale",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Water area small scale",
+    "minzoom": 1,
+    "maxzoom": 5,
+    "layout": {},
+    "paint": {
+        "fill-outline-color": "#3a4364",
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Water area medium scale/Lake or river",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Water area medium scale",
+    "filter": [
+        "==",
+        "_symbol",
+        0
+    ],
+    "minzoom": 5,
+    "maxzoom": 7,
+    "layout": {},
+    "paint": {
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Water area large scale/Lake or river",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Water area large scale",
+    "filter": [
+        "==",
+        "_symbol",
+        0
+    ],
+    "minzoom": 7,
+    "maxzoom": 11,
+    "layout": {},
+    "paint": {
+        "fill-color": "#3a4364"
+    }
+},
+{
+    "id": "Water and wastewater",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Water and wastewater",
+    "minzoom": 13,
+    "layout": {},
+    "paint": {
+        "fill-color": "#373631"
+    }
+},
+{
+    "id": "Special area of interest/Water",
+    "type": "fill",
+    "source": "esri",
+    "source-layer": "Special area of interest",
+    "filter": [
+        "==",
+        "_symbol",
+        7
+    ],
+    "minzoom": 14,
+    "layout": {},
+    "paint": {
+        "fill-color": "#3a4364"
+    }
+}

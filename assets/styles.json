@@ -1,0 +1,65 @@
+{
+    "version": 8,
+    "sprite": "http://127.0.0.1:5501/sprite",
+    "glyphs":"https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_Export_v2/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
+    "sources": {
+        "esri": {
+            "type": "vector",
+            "tiles": [
+                "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_Export_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+            ]
+        },
+        "osm": {
+            "type": "raster",
+            "tiles": [
+                "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            ],
+            "tileSize": 256,
+            "attribution": "&copy; OpenStreetMap Contributors",
+            "maxzoom": 18
+        },
+        "stamen": {
+            "type": "raster",
+            "tiles": [
+                "//stamen-tiles-a.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                "//stamen-tiles-b.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                "//stamen-tiles-c.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                "//stamen-tiles-d.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
+            ]
+        },
+        "satelite": {
+            "type": "raster",
+            "tiles": [
+                "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "osm",
+            "type": "raster",
+            "source": "osm"
+        },
+        {
+            "id": "stamen",
+            "type": "raster",
+            "source": "stamen"
+        },
+        {
+            "id": "satelite",
+            "type": "raster",
+            "source": "satelite"
+        },
+        {
+            "id": "Esri-Dark",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "Land",
+            "layout": {},
+            "paint": {
+                "fill-color": "#2f2e2c"
+            }
+        }
+        
+    ]
+}

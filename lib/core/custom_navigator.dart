@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:navbar/main.dart';
 import 'package:navbar/screens/geology.dart';
-import 'package:navbar/screens/lithology.dart';
+import 'package:navbar/screens/lithostartigraphy.dart';
 
 
 import 'page_routes.dart';
@@ -24,7 +24,7 @@ class CustomNavigator {
 
   final _routeNameToWidgetFunction = {
      HomePage.routeName: (_) => const HomePage(),
-      LithologyScreen.routeName:()=> LithologyScreen(),
+      Lithostratigraphy.routeName:()=> Lithostratigraphy(),
       GeologyScreen.routeName:()=> GeologyScreen()
   };
 

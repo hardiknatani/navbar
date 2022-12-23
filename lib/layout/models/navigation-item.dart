@@ -1,9 +1,12 @@
+import 'package:flutter/material.dart';
+
 class NavigationLink {
   final String type = 'link';
   final String route;
   final String label;
+  final dynamic icon;
 
-  NavigationLink({required this.route, required this.label});
+  NavigationLink({required this.route, required this.label, required this.icon});
 }
 
 class NavigationSubheading {
@@ -16,9 +19,11 @@ class NavigationSubheading {
 
 final navItemsList = [
   NavigationSubheading(children: [
-    NavigationLink(route: '/geology', label: "Geology"),
-    NavigationLink(route: '/lithology', label: "Lithology")
-  ], label: "Geology"),
+    // NavigationLink(route: '/geology', label: "Geology"),
+    NavigationLink(route: '/lithostratigraphy', label: "Lithostratigraphy",icon: Icon(Icons.layers)),
+      NavigationLink(route: '/hcplays', label: "Hydrocarbon Plays",icon: Icon(Icons.play_circle_sharp))
+  ], label: "Geology",),
   NavigationSubheading(
-      label: "Map", children: [NavigationLink(route: '/map', label: "Map")])
+      label: "Map", children: [NavigationLink(route: '/map', label: "Map" , icon: Icon(Icons.map))])
+  // NavigationLink(route: '/map', label: "Map")
 ];
